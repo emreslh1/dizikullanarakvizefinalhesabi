@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+  int i;
+  int vize[5];
+  int final[5];
+   int ort[5];
+ for(i=0;i<5;i++)
+ {
+   printf("%d . vize notunu giriniz:", i+1);
+   scanf("%d",&vize[i]);
+
+   printf("%d . final notunu giriniz:", i+1);
+   scanf("%d",&final[i]);
+ }
+
+for (i=0;i<5;i++)
+{
+   ort[i]=vize[i]*0.6 + final[i]*0.4 ;
+
+
+     printf("%d . ortalama= %d\n",i+1 , ort[i]);
+
+}
+
+
+
+
+  return 0;
+}
